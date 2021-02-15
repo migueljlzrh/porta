@@ -1,6 +1,6 @@
 // @flow
 
-import React from 'react'
+import * as React from 'react'
 import Form from 'react-jsonschema-form'
 
 import { isNotApicastPolicy } from 'Policies/util'
@@ -19,7 +19,7 @@ type Props = {
   }
 }
 
-const PolicyConfig = ({policy, actions}: Props) => {
+const PolicyConfig = ({policy, actions}: Props): React.Node => {
   const { submitPolicyConfig, removePolicyFromChain, closePolicyConfig, updatePolicyConfig } = actions
   const { humanName, version, summary, description, enabled, configuration, data, removable } = policy
 

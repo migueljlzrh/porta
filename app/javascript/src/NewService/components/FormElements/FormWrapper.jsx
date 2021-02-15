@@ -1,11 +1,11 @@
 // @flow
 
-import React from 'react'
+import * as React from 'react'
 import type {FormProps} from 'NewService/types'
 import {CSRFToken} from 'utilities/utils'
 import {HiddenServiceDiscoveryInput} from 'NewService/components/FormElements'
 
-const FormWrapper = (props: FormProps) => {
+const FormWrapper = (props: FormProps): React.Node => {
   const {id, formActionPath, hasHiddenServiceDiscoveryInput, submitText} = props
   return (
     <form

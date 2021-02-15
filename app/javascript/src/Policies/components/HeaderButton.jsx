@@ -20,7 +20,7 @@ const icons = {
   cancel: 'fa fa-times-circle'
 }
 
-const HeaderButton = ({ type, onClick, children }: Props) => (
+const HeaderButton = ({ type, onClick, children }: Props): React.Node => (
   <div className={classNames[type]} onClick={onClick}>
     <i className={icons[type]} />{children}
   </div>
