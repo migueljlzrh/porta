@@ -2,11 +2,12 @@
 
 exports[`should have Dashboard, Audience, Products, Backends and Settings 1`] = `
 <ContextSelector
-  activeMenu=""
+  activeMenu="dashboard"
   audienceLink="/audience"
   backendsLink="/backends"
   currentApi={null}
   productsLink="/products"
+  settingsLink="/settings"
 >
   <div
     className="PopNavigation PopNavigation--context pf-m-expanded"
@@ -18,14 +19,15 @@ exports[`should have Dashboard, Audience, Products, Backends and Settings 1`] = 
       title="Context Selector"
     >
       <ActiveMenuTitle
-        activeMenu=""
+        activeMenu="dashboard"
       >
         <span
           className="ActiveMenuTitle"
         >
           <i
-            className="fa "
+            className="fa fa-home"
           />
+          Dashboard
           <i
             className="fa fa-chevron-down"
           />
@@ -40,7 +42,7 @@ exports[`should have Dashboard, Audience, Products, Backends and Settings 1`] = 
         className="PopNavigation-listItem"
       >
         <a
-          className="PopNavigation-link"
+          className="PopNavigation-link current-context"
           href="/p/admin/dashboard"
         >
           <i
@@ -93,6 +95,7 @@ exports[`should have Dashboard, Audience, Products, Backends and Settings 1`] = 
       >
         <a
           className="PopNavigation-link"
+          href="/settings"
         >
           <i
             className="fa fa-cog"
@@ -107,10 +110,11 @@ exports[`should have Dashboard, Audience, Products, Backends and Settings 1`] = 
 
 exports[`should not have Audience if not provided 1`] = `
 <ContextSelector
-  activeMenu=""
+  activeMenu="dashboard"
   backendsLink="/backends"
   currentApi={null}
   productsLink="/products"
+  settingsLink="/settings"
 >
   <div
     className="PopNavigation PopNavigation--context pf-m-expanded"
@@ -122,14 +126,15 @@ exports[`should not have Audience if not provided 1`] = `
       title="Context Selector"
     >
       <ActiveMenuTitle
-        activeMenu=""
+        activeMenu="dashboard"
       >
         <span
           className="ActiveMenuTitle"
         >
           <i
-            className="fa "
+            className="fa fa-home"
           />
+          Dashboard
           <i
             className="fa fa-chevron-down"
           />
@@ -144,7 +149,7 @@ exports[`should not have Audience if not provided 1`] = `
         className="PopNavigation-listItem"
       >
         <a
-          className="PopNavigation-link"
+          className="PopNavigation-link current-context"
           href="/p/admin/dashboard"
         >
           <i
@@ -184,6 +189,7 @@ exports[`should not have Audience if not provided 1`] = `
       >
         <a
           className="PopNavigation-link"
+          href="/settings"
         >
           <i
             className="fa fa-cog"
